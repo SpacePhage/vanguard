@@ -70,24 +70,16 @@ table {
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 body {
+    font-family: var(--font);
     background-color: var(--charcoal);
-
-}
-
-.container {
-    max-width: 1200px;
     margin: 0 auto;
+    min-width: 400px;
 }
 
 
 header {
     color: var(--white);
     background-color: var(--black);
-}
-
-header img {
-    width: 40px;
-    height: auto;
 }
 
 li a{
@@ -97,14 +89,9 @@ li a{
 
 h1 {
     color: var(--blue);
-}
-
-
-#introduction {
-    color: var(--white);
-    background-image: url('images/vanguard-hero.jpg');
-    display: grid;
-    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
 }
 
 
@@ -113,19 +100,27 @@ h1 {
     border-radius: 12px;
     text-decoration: none;
     color: var(--white);
-
+    padding: 1rem 1rem;
+    font-weight: bold;
 }
 
 main {
     background-color: var(--white);
 }
 
-h2 {
+h2, h3 {
     font-weight: bold;
 }
 
-h3 {
-    font-weight: bold;
+
+#offerings {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#offerings h3 {
+    display: grid;
+    text-align: center;
 }
 
 #results {
@@ -134,15 +129,12 @@ h3 {
 }
 
 
-
-table {
-
-}
-
 footer {
     color: var(--white);
     background-color: var(--black);
 }
+
+
 
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
@@ -155,7 +147,8 @@ footer {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+
+#introduction {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -163,12 +156,26 @@ footer {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
+.intro-box {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding-top: 1rem;
+}
 
+#introduction p {
+    max-width: 45ch;
+}
+
+#introduction a {
+
+}
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+h1::before{
+    content: "";
+    position: absolute;
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -194,7 +201,7 @@ footer {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease-in-out;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
