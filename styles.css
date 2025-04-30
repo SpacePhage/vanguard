@@ -69,6 +69,81 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+body {
+    background-color: var(--charcoal);
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+header img {
+    width: 40px;
+    height: auto;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+h1 {
+    color: var(--blue);
+}
+
+
+#introduction {
+    color: var(--white);
+    background-image: url('images/vanguard-hero.jpg');
+    display: grid;
+    text-align: center;
+}
+
+
+#introduction a{
+    background-color: var(--blue);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+main {
+    background-color: var(--white);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+#results {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+
+table {
+
+}
+
+footer {
+    color: var(--white);
+    background-color: var(--black);
+}
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
@@ -148,6 +223,7 @@ table {
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
+@media screen and (min-width: 800px) {
 
     #results {
         grid-template-columns: 1fr 1fr;
@@ -163,5 +239,8 @@ table {
         width: 50%;
     }
 
-
+}
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+
+}
