@@ -82,10 +82,6 @@ header {
     background-color: var(--black);
 }
 
-#mobile-nav {
-
-}
-
 nav ul {
     width: 100%;
     margin: 0;
@@ -179,19 +175,48 @@ main {
     background-color: var(--white);
 }
 
+p {
+    line-height: 1.5;
+    width: 45ch;
+}
+
 h2, h3 {
     font-weight: bold;
 }
 
 
 #offerings {
-    background-color: var(--blue);
     color: var(--white);
 }
 
 #offerings h3 {
     display: grid;
     text-align: center;
+}
+
+#offerings h2 {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+article {
+    background-color: var(--blue);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    width: 40ch;
+}
+
+article h3 {
+    padding-bottom: 1rem;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+article:hover {
+    transform:translateY(-10px);
 }
 
 #results {
@@ -267,6 +292,18 @@ h1::before{
         transform: translateY(0);
     }
 }
+
+#expertise h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#expertise p {
+    padding-bottom: 3rem;
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
