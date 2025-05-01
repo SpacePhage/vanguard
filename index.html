@@ -16,25 +16,26 @@
 <body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
         <header>
-            <div class="container">
             <section id="navigation">
-                <h1>Vanguard</h1>
-                <nav>
-                    <h2>Main Navigation</h2>
+                <div class="container">
+                    <h1>Vanguard</h1>
+                    <nav>
+                        <h2>Main Navigation</h2>
+    
+                        <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle"><span></span></label>
+                        <ul>
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
 
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle"><span></span></label>
-                    <ul>
-                        <li><a href="#">About</a> </li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                </section>
-            </div>
         </header>
             <main>
-                <div class="container">
+
                 <section id="introduction">
                         <div class="intro-box">
                             <h2>Innovation & Investment</h2>
@@ -75,59 +76,61 @@
                         </article>
                     </section>
                     <section id="results">
-                        <h2>Proven Results</h2>
-                            <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-                        <h3>Profits</h3>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>Revenue ($M)</th>
-                                        <th>Growth (%)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2020</td>
-                                        <td>$120M</td>
-                                        <td>30%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2021</td>
-                                        <td>$180M</td>
-                                        <td>50%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2022</td>
-                                        <td>$250M</td>
-                                        <td>70%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2023</td>
-                                        <td>$340M</td>
-                                        <td>85%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2024</td>
-                                        <td>$420M</td>
-                                        <td>100%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h3>Growth</h3>
-                                    <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                                <div  id="bar-chart">
-                                    <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                                    <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                                    <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                                    <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                                    <div class="bar" data-year="2024" style="--height: 100%;"></div>
-                                </div>
+                        <div class="container">
+                            <h2>Proven Results</h2>
+                                <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+                            <h3>Profits</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Year</th>
+                                            <th>Revenue ($M)</th>
+                                            <th>Growth (%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2020</td>
+                                            <td>$120M</td>
+                                            <td>30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2021</td>
+                                            <td>$180M</td>
+                                            <td>50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022</td>
+                                            <td>$250M</td>
+                                            <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2023</td>
+                                            <td>$340M</td>
+                                            <td>85%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024</td>
+                                            <td>$420M</td>
+                                            <td>100%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3>Growth</h3>
+                                        <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
+                                    <div  id="bar-chart">
+                                        <div class="bar" data-year="2020" style="--height: 30%;"></div>
+                                        <div class="bar" data-year="2021" style="--height: 50%;"></div>
+                                        <div class="bar" data-year="2022" style="--height: 70%;"></div>
+                                        <div class="bar" data-year="2023" style="--height: 85%;"></div>
+                                        <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                                    </div>
+                        </div>
                     </section>
-                </div>
+
             </main>
             <footer>
-                <div class="container">
+            <div class="container">
                 <h2>Contact Us</h2>
                 <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                     <form>
@@ -145,7 +148,7 @@
                     </form>
                 <address>
                     <p> &copy; 2025 Vanguard. All rights reserved.</p>
-                    <a href="mailto:info@vanguard.com">Email: info@vanguard.com</a>
+                    <p><span class="email">Email:</span><a href="mailto:info@vanguard.com"> info@vanguard.com</a></p><br>
                     <a href="tel:+14801234567">Phone: 480.123.4567</a>
                 </address>
                 </div>

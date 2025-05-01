@@ -80,6 +80,9 @@ body {
 header {
     color: var(--white);
     background-color: var(--black);
+    box-shadow: 0 8px 16px var(--blue);
+    z-index: 10;
+    position: relative;
 }
 
 nav ul {
@@ -196,17 +199,18 @@ h2, h3 {
 
 #offerings h2 {
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 article {
     background-color: var(--blue);
     border-radius: 10px;
     margin: 1rem;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     width: 40ch;
+    height: auto;
 }
 
 article h3 {
@@ -222,6 +226,38 @@ article:hover {
 #results {
     background-color: var(--blue);
     color: var(--white);
+    margin-top: 5rem;
+    width: 100%; 
+}
+
+
+
+#results h3, #results h2 {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+table {
+    background-color: var(--black);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--charcoal);
+}
+
+tbody tr:nth-child(odd) {
+
+}
+
+th, td {
+    border: solid var(--charcoal) 1px;
+    padding: 1rem;
+}
+
+td {
+    text-align: center;
 }
 
 
@@ -230,6 +266,57 @@ footer {
     background-color: var(--black);
 }
 
+footer h2 {
+    font-size: 1.75rem;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    font-family: var(--font);
+}
+
+input, textarea {
+    border: solid 2px var(--blue);
+    padding: 1rem;
+}
+
+button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: var(--blue);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    border: none;
+}
+
+address {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+address a {
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+a[href^="mailto:"] {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+address p {
+    margin: 0.1rem 0;
+}
 
 
 
@@ -294,14 +381,15 @@ h1::before{
 }
 
 #expertise h2 {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.75rem;
+    padding: 2rem;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
 }
 
 #expertise p {
     padding-bottom: 3rem;
+    padding-left: 1rem;
 }
 
 /* THIS ONE IS DONE FOR YOU */
@@ -314,7 +402,7 @@ h1::before{
     height: 300px;
     width: 100%;
     max-width: 800px;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
 }
 /* ADD ON TRANSITION ON HEIGHT */
