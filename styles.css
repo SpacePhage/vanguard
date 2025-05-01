@@ -147,9 +147,7 @@ label span:after {
     top: -.75rem
 }
 
-input {
-    display: none;
-}
+
 
 h1 {
     color: var(--blue);
@@ -283,9 +281,13 @@ form {
     font-family: var(--font);
 }
 
+label {
+
+}
+
 input, textarea {
     border: solid 2px var(--blue);
-    padding: 1rem;
+    padding: 2rem;
 }
 
 button {
