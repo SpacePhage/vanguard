@@ -85,6 +85,23 @@ header {
     position: relative;
 }
 
+h2, h3 {
+
+    animation: flyIn 2s 0.3s 1 forwards;
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 nav ul {
     width: 100%;
     margin: 0;
