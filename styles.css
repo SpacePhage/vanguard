@@ -465,5 +465,12 @@ footer p {
 }
 /* MEDIA QUERIES (LARGE) */
 @media screen and (min-width: 1024px) {
+    p {
+        width: 110ch;
+    }
 
+    .intro-box p{
+        min-width: 80ch;
+        
+    }
 }
