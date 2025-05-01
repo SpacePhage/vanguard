@@ -425,6 +425,28 @@ h1::before{
         justify-content:flex-end;
     }
 
+    .intro-box p{
+        min-width: 70ch;
+    }
+
+    #expertise p {
+        min-width: 70ch;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+
+table {
+    width: 50vw;
+}
+
+footer p {
+    min-width: 65ch;
+}
+
 
     #results {
         grid-template-columns: 1fr 1fr;
