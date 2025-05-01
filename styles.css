@@ -82,9 +82,74 @@ header {
     background-color: var(--black);
 }
 
-li a{
+#mobile-nav {
+
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+}
+
+
+nav li a{
+    display: block;
+    padding: 1rem;
     text-decoration: none;
     color: var(--blue);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--black);
+    background-color: var(--blue);
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+label span {
+    background-color: var(--white);
+    display: block;
+    height: 0.25rem;
+    position:relative;
+    transition: background-color 0.3s ease-out;
+    width: 2rem;
+}
+
+label span::before, label span::after {
+    background-color: var(--white);
+    content:'';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+label span::before {
+    top: .75rem;
+}
+
+label span:after {
+    top: -.75rem
+}
+
+input {
+    display: none;
 }
 
 h1 {
@@ -102,6 +167,12 @@ h1 {
     color: var(--white);
     padding: 1rem 1rem;
     font-weight: bold;
+}
+
+#introduction a:hover {
+    background-color: var(--red);
+    font-size: 1.25rem;
+    transition: font-size 0.3s ease-in-out;
 }
 
 main {
@@ -162,15 +233,17 @@ footer {
 .intro-box {
     background: transparent;
     backdrop-filter: blur(10px);
-    padding-top: 1rem;
+    padding: 1rem 1rem;
 }
 
 #introduction p {
     max-width: 45ch;
+    padding-bottom: 2rem;
 }
 
-#introduction a {
-
+#introduction h2 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 h1::before{
@@ -180,7 +253,19 @@ h1::before{
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    animation: float 5s ease-in-out infinite;
+}
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -201,7 +286,7 @@ h1::before{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: height 1s ease-in-out;
+    transition: height 1s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
