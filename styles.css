@@ -121,31 +121,6 @@ nav label {
     user-select: none;
 }
 
-label span {
-    background-color: var(--white);
-    display: block;
-    height: 0.25rem;
-    position:relative;
-    transition: background-color 0.3s ease-out;
-    width: 2rem;
-}
-
-label span::before, label span::after {
-    background-color: var(--white);
-    content:'';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-}
-
-label span::before {
-    top: .75rem;
-}
-
-label span:after {
-    top: -.75rem
-}
 
 
 
@@ -245,9 +220,6 @@ tbody tr:nth-child(even) {
     background: var(--charcoal);
 }
 
-tbody tr:nth-child(odd) {
-
-}
 
 th, td {
     border: solid var(--charcoal) 1px;
@@ -281,9 +253,6 @@ form {
     font-family: var(--font);
 }
 
-label {
-
-}
 
 input, textarea {
     border: solid 2px var(--blue);
@@ -443,6 +412,19 @@ h1::before{
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
+
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content:flex-end;
+    }
+
 
     #results {
         grid-template-columns: 1fr 1fr;
