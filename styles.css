@@ -603,11 +603,11 @@ footer p {
 
     }
 
-    #fullname {
+    #grid-name {
         grid-area: name;
     }
 
-    #email {
+    #grid-email {
         grid-area: email;
     }
 
@@ -615,11 +615,11 @@ footer p {
         grid-area: company
     }
 
-    #industry {
+    #grid-industry {
         grid-area: industry 
     }
 
-    #message {
+    #grid-message {
         grid-area: message;
     }
 
