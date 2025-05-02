@@ -22,7 +22,13 @@
                     <nav>
                         <h2>Main Navigation</h2>
     
-                        <ul>
+                        <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <ul class="menu">
                             <li><a href="#">About</a> </li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Contact</a></li>
@@ -77,58 +83,63 @@
                     </section>
                     <section id="results">
                         <div class="container">
-                            <h2>Proven Results</h2>
-                            <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-                            
-                                <h3>Profits</h3>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Year</th>
-                                                <th>Revenue ($M)</th>
-                                                <th>Growth (%)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2020</td>
-                                                <td>$120M</td>
-                                                <td>30%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2021</td>
-                                                <td>$180M</td>
-                                                <td>50%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2022</td>
-                                                <td>$250M</td>
-                                                <td>70%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2023</td>
-                                                <td>$340M</td>
-                                                <td>85%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2024</td>
-                                                <td>$420M</td>
-                                                <td>100%</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                            
-                            
-                                    <h3>Growth</h3>
-                                            <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                                        <div  id="bar-chart">
-                                            <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                                            <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                                            <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                                            <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                                            <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                                <h2>Proven Results</h2>
+                                <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+                                <div id="flex-results">
+                                    <div class="results-table">
+                                        <h3>Profits</h3>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Year</th>
+                                                        <th>Revenue ($M)</th>
+                                                        <th>Growth (%)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2020</td>
+                                                        <td>$120M</td>
+                                                        <td>30%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2021</td>
+                                                        <td>$180M</td>
+                                                        <td>50%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022</td>
+                                                        <td>$250M</td>
+                                                        <td>70%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023</td>
+                                                        <td>$340M</td>
+                                                        <td>85%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2024</td>
+                                                        <td>$420M</td>
+                                                        <td>100%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                
+                                
+                                        <div class="results-chart">
+                                            <h3>Growth</h3>
+                                                    <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
+                                                <div  id="bar-chart">
+                                                    <div class="bar" data-year="2020" style="--height: 30%;"></div>
+                                                    <div class="bar" data-year="2021" style="--height: 50%;"></div>
+                                                    <div class="bar" data-year="2022" style="--height: 70%;"></div>
+                                                    <div class="bar" data-year="2023" style="--height: 85%;"></div>
+                                                    <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                                                </div>
                                         </div>
-                            
+                                
+                            </div>
                         </div>
                     </section>
 
@@ -138,17 +149,27 @@
                 <h2>Contact Us</h2>
                 <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                     <form>
-                        <label for="fullname">Full Name</label>
-                        <input type="text" name="fullname" id="fullname">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email">
-                        <label for="company">Company Name</label>
-                        <input type="text" name="company" id="company">
-                        <label for="industry">Industry</label>
-                        <input type="text" name="industry" id="industry">
-                        <label for="message">How can we help you?</label>
-                        <textarea name="message" id="message"></textarea>
-                        <button type="submit">Submit</button>
+                        <div id="fullname">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div id="email">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div id="company">
+                            <label for="company">Company Name</label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div id="industry">
+                            <label for="industry">Industry</label>
+                            <input type="text" name="industry" id="industry">
+                        </div>
+                        <div id="message">
+                            <label for="message">How can we help you?</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <button style="grid-area: button" type="submit">Submit</button>
                     </form>
                 <address>
                     <p> &copy; 2025 Vanguard. All rights reserved.</p>
